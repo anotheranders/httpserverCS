@@ -13,10 +13,10 @@ namespace simplehttpserver
     /// author: anbo<br />
     /// References
     /// <list type="">
-    /// http://msdn.microsoft.com/en-us/library/b6xa24z5(v=vs.110).aspx
-    /// http://www.codeproject.com/Articles/17071/Sample-HTTP-Server-Skeleton-in-C
-    /// http://msdn.microsoft.com/en-us/library/aa989072(v=vs.80).aspx
-    /// http://stackoverflow.com/questions/12009695/net-equivalent-of-javas-bufferedreader
+    /// <item>http://msdn.microsoft.com/en-us/library/b6xa24z5(v=vs.110).aspx</item>
+    /// <item>http://www.codeproject.com/Articles/17071/Sample-HTTP-Server-Skeleton-in-C</item>
+    /// <item>http://msdn.microsoft.com/en-us/library/aa989072(v=vs.80).aspx</item>
+    /// <item>http://stackoverflow.com/questions/12009695/net-equivalent-of-javas-bufferedreader</item>
     /// </list>
     class HttpServer
     {
