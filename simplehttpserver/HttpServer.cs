@@ -94,7 +94,7 @@ namespace simplehttpserver
                 toClient.Write("HTTP/1.0 404 Not Found\r\n");
                 toClient.Write("Content-Type: text/html\r\n");
                 toClient.Write("\r\n");
-                toClient.Write("<html><head><title>Yes!</title></head><body> {0} </body></html>", ex.Message);
+                toClient.Write("<html><head><title>Yes!</title></head><body>The resource {0} was not found</body></html>", uri);
                 toClient.Flush();
             }
 
