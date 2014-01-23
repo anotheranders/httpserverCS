@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Globalization;
 using System.IO;
+using System.Linq;
 using System.Net;
 using System.Net.Sockets;
 using System.Text;
@@ -49,16 +50,17 @@ namespace simplehttpserver
             {
                 throw new ArgumentOutOfRangeException("port", port, "port number out of range");
             }
-            IPAddress localIpAddress = Dns.Resolve("localhost").AddressList[0];
+            IPHostEntry ipHostEntry = Dns.GetHostEntry("localhost");
+            IPAddress localIpAddress = ipHostEntry.AddressList[0];
+            //IPAddress localIpAddress = Dns.Resolve("localhost").AddressList[0];
             TcpListener server = new TcpListener(localIpAddress, port);
             server.Start();
-            Console.WriteLine("Server listening on port: " + server.ToString());
+            Console.WriteLine("Server listening on port: {0}", port);
             while (_keepOnRunning)
             {
                 TcpClient client = server.AcceptTcpClient();
                 //DoIt(client);
                 Task.Factory.StartNew(() => DoIt(client));
-                
             }
             server.Stop();
         }
@@ -129,7 +131,28 @@ namespace simplehttpserver
 
         static void Main(string[] args)
         {
-            new HttpServer(DefaultPort);
+            var port = Port(args);
+            new HttpServer(port);
+        }
+
+        private static int Port(string[] args)
+        {
+            int port = DefaultPort;
+            if (args.Any())
+            {
+                String portStr = args[0];
+                Console.WriteLine(portStr);
+                try
+                {
+                    port = int.Parse(portStr);
+                }
+                catch (FormatException ex)
+                {
+                    Console.WriteLine("Illegal port number: {0}", portStr);
+                    Console.WriteLine("Will use port {0}", DefaultPort);
+                }
+            }
+            return port;
         }
     }
 }
