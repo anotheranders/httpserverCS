@@ -8,6 +8,7 @@ using System.Net.Sockets;
 using System.Text;
 using System.Threading.Tasks;
 
+
 namespace simplehttpserver
 {
     /// <summary>
@@ -19,7 +20,7 @@ namespace simplehttpserver
     /// <item>http://msdn.microsoft.com/en-us/library/aa989072(v=vs.80).aspx</item>
     /// <item>http://stackoverflow.com/questions/12009695/net-equivalent-of-javas-bufferedreader</item>
     /// </list>
-    class HttpServer
+    public class HttpServer
     {
         /// <summary>
         /// The default port of the HTTP server

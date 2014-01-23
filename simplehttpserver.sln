@@ -5,6 +5,8 @@ VisualStudioVersion = 12.0.21005.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "simplehttpserver", "simplehttpserver\simplehttpserver.csproj", "{C9670304-DA29-49C1-B92A-006E5C97BE9D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleHttpServerTestProject", "SimpleHttpServerTestProject\SimpleHttpServerTestProject.csproj", "{B9A299C4-2367-45DA-993F-525BC976A533}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{C9670304-DA29-49C1-B92A-006E5C97BE9D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C9670304-DA29-49C1-B92A-006E5C97BE9D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C9670304-DA29-49C1-B92A-006E5C97BE9D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B9A299C4-2367-45DA-993F-525BC976A533}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B9A299C4-2367-45DA-993F-525BC976A533}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B9A299C4-2367-45DA-993F-525BC976A533}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B9A299C4-2367-45DA-993F-525BC976A533}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

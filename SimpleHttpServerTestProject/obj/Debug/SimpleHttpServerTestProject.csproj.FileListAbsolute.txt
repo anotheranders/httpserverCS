@@ -1,0 +1,1 @@
+C:\andersb\sodpcs\httpserver\simplehttpserver\SimpleHttpServerTestProject\obj\Debug\SimpleHttpServerTestProject.csprojResolveAssemblyReference.cache
