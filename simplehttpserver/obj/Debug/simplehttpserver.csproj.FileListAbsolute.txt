@@ -4,3 +4,6 @@ C:\andersb\sodpcs\httpserver\simplehttpserver\simplehttpserver\bin\Debug\simpleh
 C:\andersb\sodpcs\httpserver\simplehttpserver\simplehttpserver\obj\Debug\simplehttpserver.csprojResolveAssemblyReference.cache
 C:\andersb\sodpcs\httpserver\simplehttpserver\simplehttpserver\obj\Debug\simplehttpserver.exe
 C:\andersb\sodpcs\httpserver\simplehttpserver\simplehttpserver\obj\Debug\simplehttpserver.pdb
+C:\temp\httpserverCS\simplehttpserver\bin\Debug\simplehttpserver.exe.config
+C:\temp\httpserverCS\simplehttpserver\obj\Debug\simplehttpserver.exe
+C:\temp\httpserverCS\simplehttpserver\obj\Debug\simplehttpserver.pdb

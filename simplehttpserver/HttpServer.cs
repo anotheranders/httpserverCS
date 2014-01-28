@@ -38,6 +38,7 @@ namespace simplehttpserver
             ContentTypes["html"] = "text/html";
             ContentTypes["htm"] = "text/html";
             ContentTypes["txt"] = "text/plain";
+            ContentTypes["gif"] = "image/gif";
 
         }
 
